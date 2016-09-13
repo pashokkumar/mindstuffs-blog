@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Mindstuffs</title>
+		<description>a place to learn</description>
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Standard Post</title>
+				
+				
+					<description>&lt;p&gt;Here you can see the basic post. No fancy type, no setting and the featured image is just embedded into the content.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 10 Feb 2015 00:00:00 +0530</pubDate>
+				<link>/standard/</link>
+				<guid isPermaLink="true">/standard/</guid>
+			</item>
+		
+			<item>
+				<title>First Post</title>
+				
+				
+					<description>&lt;p&gt;Here you can see the basic post. No fancy type, no setting and the featured image is just embedded into the content.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 10 Jan 2015 00:00:00 +0530</pubDate>
+				<link>/first/</link>
+				<guid isPermaLink="true">/first/</guid>
+			</item>
+		
+	</channel>
+</rss>
