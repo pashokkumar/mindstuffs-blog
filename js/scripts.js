@@ -2,7 +2,13 @@
 var $fullheight = $('.head').innerHeight(),
     $shrinkheight = $('shrink').innerHeight(),
     $menuhheight = $('main_menu').innerHeight(),
-    $minheight = $(window).height() + 10 + $menuhheight + $shrinkheight;
+    $minheight = $(window).height() + 10 + $menuhheight + $shrinkheight,
+    
+    disqus_config = function () {
+        this.page.url = document.URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = document.URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
 
 $(document).ready(function() {
     // add header height as margin to body, set min-height so header can shrink without causing problems
