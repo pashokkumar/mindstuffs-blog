@@ -1,13 +1,29 @@
 // grab some heights
-var $fullheight = $('.head').innerHeight(),
-    $shrinkheight = $('shrink').innerHeight(),
-    $menuhheight = $('main_menu').innerHeight(),
+var $fullheight = $('.head').innerHeight(), $shrinkheight = $('shrink').innerHeight(), $menuhheight = $('main_menu').innerHeight(),
     $minheight = $(window).height() + 10 + $menuhheight + $shrinkheight,
-
+    /* Disqus comment configuration */
     disqus_config = function () {
         this.page.url = document.URL;  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = document.URL.substring(document.URL.lastIndexOf('/') + 1);; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
+
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1223080727754144',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
 
 $(document).ready(function() {
     // add header height as margin to body, set min-height so header can shrink without causing problems
@@ -57,7 +73,21 @@ $(document).ready(function() {
         $('.switch').hide();
     }else{
         $('.switch').show();
-    }});
+    }
+
+    $('.Sharer_link').click(function(){
+        if($(this).attr("class").indexOf('u-facebook') > -1){
+            FB.ui({
+              method: 'share',
+              mobile_iframe: true,
+              href: document.URL,
+            }, function(response){}); 
+        }else if($(this).attr("class").indexOf('u-linkedin') > -1){
+            
+        }
+    });
+
+});
 
 
 $(window).scroll(function() {
