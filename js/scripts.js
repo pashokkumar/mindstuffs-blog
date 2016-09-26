@@ -1,6 +1,7 @@
 // grab some heights
 var $fullheight = $('.head').innerHeight(), $shrinkheight = $('shrink').innerHeight(), $menuhheight = $('main_menu').innerHeight(),
     $minheight = $(window).height() + 10 + $menuhheight + $shrinkheight,
+    strWindowFeatures, URL,
     /* Disqus comment configuration */
     disqus_config = function () {
         this.page.url = document.URL;  // Replace PAGE_URL with your page's canonical URL variable
@@ -83,7 +84,9 @@ $(document).ready(function() {
               href: document.URL,
             }, function(response){}); 
         }else if($(this).attr("class").indexOf('u-linkedin') > -1){
-            
+            strWindowFeatures = "location=yes,height=570,width=520,scrollbars=yes,status=yes",
+            URL = "https://www.linkedin.com/shareArticle?mini=true&title="+ encodeURIComponent($(this).attr("title")) +"&url=" + encodeURIComponent(document.URL);
+            window.open(URL, "_blank", strWindowFeatures);
         }
     });
 
