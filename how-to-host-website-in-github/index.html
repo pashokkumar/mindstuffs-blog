@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-<title>Mindstuffs - php </title>
+<title>Mindstuffs - How to host website in github </title>
 
 <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:500,600' rel='stylesheet' type='text/css'>
@@ -12,7 +12,7 @@
 
     </head>
 
-    <body class="index">
+    <body>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="display:none;">
     <defs>
         <symbol id="twinsister_logo">
@@ -397,92 +397,200 @@
 
         <section class="margin">
             <div class="content">
-
-               <!--  <div><h1 class="page_title">php</h1></div> -->
-
-                <!-- <div class="content_container"> -->
-                   <!--  <article> -->
-                        <!--  -->
-
+                <div class="content_container">
+                    <article>
                         
-                        <!-- <div class="post_content"> -->
-                            <div class="articles php-article">
 
+                        <h1 class="post_title">
+                            How to host website in github
+                        </h1>
+                        <div class="meta">
+                            
 
+    <span class="author">Posted by
+        
+        
+    </span>
 
+ &bull;
+                            <span class="date">
+                                Published on October 23, 2016
+                            </span>
+                        </div>
+                        
+                            
+                                <img class="featimg" src="/img/git-hub-host.jpg" alt="git-hub-host.jpg">
+                            
+                        
+                        <div class="post_content">
+                            <h2 id="host-your-website-in-github-repository">Host your website in github repository</h2>
 
+<p>You can host your website in whatever hosting company offers in internet, but github provides with free hosting with unlimited project hosting.</p>
 
-</div>
+<p>You can Host directly from your Github repository or github command.</p>
 
-                        <!-- </div> -->
-                    <!-- </article> -->
-                <!-- </div> -->
-                <div class="sidebar">
-    <div class="widget">
-        <h3 class="title">Categories</h3>
-        <ul class="category_list">
-            
-            
-                
-                    <li><a href="/category/web">web</a></li>
-                
-                    <li><a href="/category/entrepreneur">entrepreneur</a></li>
-                
-            
-            
-        </ul>
+<h3 id="create-a-github-account">Create a github account</h3>
+<p>First we need to create a github account for hosting our website. Goto <a href="https://github.com">Github</a> website for creating a new account.</p>
+
+<p>Follow the steps for creating the account in github.</p>
+
+<ul>
+  <li><strong>STEP 1:</strong>
+Create an account with username and email address.
+    <blockquote>
+      <p>Make sure that your username should be your github site name</p>
+    </blockquote>
+
+    <p><img src="/img/github-create-account.png" alt="Create new account" /></p>
+  </li>
+  <li>
+    <p><strong>STEP 2:</strong>
+Choose the unlimited public repositories for free option and click continue.</p>
+
+    <p><img src="/img/github-choose-plan.png" alt="Github choose plan" /></p>
+  </li>
+  <li>
+    <p><strong>STEP 3:</strong>
+Select the option from thr list whichever is applicable to you and click submit.</p>
+
+    <p><img src="/img/github-create-experience.png" alt="Gitgub create experience level" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="ready-to-start-ok-generate-a-site-for-your-project">Ready to start? Ok, Generate a site for your project</h3>
+
+<ul>
+  <li><strong>STEP 4:</strong>
+Create a new repository name for which your website is going to host.
+    <blockquote>
+      <p>Make sure that repository name and username should match otherwise the page will not host</p>
+    </blockquote>
+
+    <p><img src="/img/create-new-repository.png" alt="Create new repository" /></p>
+  </li>
+</ul>
+
+<p>There are many ways of git client you can use to upload your content to repository.</p>
+
+<h4 id="using-terminal">Using Terminal</h4>
+
+<ul>
+  <li>
+    <p><strong>STEP 5:</strong>
+Here I am going to use the command line to update/push the html code.
+ 	&gt; Before going forward you should install Git CMD in your system. Install it from <a href="https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line">here</a></p>
+  </li>
+  <li>
+    <p><strong>STEP 6:</strong>
+Open the Git command and go to folder where you want to store your website project, and clone the new repository.</p>
+
+    <p><code class="highlighter-rouge">git clone https://github.com/username/username.github.io</code></p>
+  </li>
+  <li>
+    <p><strong>STEP 7:</strong>
+Enter the project folder and add an index.html file.</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  &gt; cd username.github.io
+  	&gt; echo "Hello World" &gt; index.html
+</code></pre>
     </div>
-    <div class="widget">
-        <h3 class="title">Tags</h3>
-        <ul class="tag_list">
-            
-            
-                
-                    <li><a href="/tag/github">github</a></li>
-                
-                    <li><a href="/tag/free">free</a></li>
-                
-                    <li><a href="/tag/hosting">hosting</a></li>
-                
-                    <li><a href="/tag/website">website</a></li>
-                
-                    <li><a href="/tag/free hosting">free hosting</a></li>
-                
-                    <li><a href="/tag/custom-url">custom-url</a></li>
-                
-                    <li><a href="/tag/custom -domain">custom -domain</a></li>
-                
-            
-            
-        </ul>
+  </li>
+  <li>
+    <p><strong>STEP 8:</strong>
+Now you need to push your changes in your file.</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  &gt; git add --all
+  	&gt; git commit -m "First commit"
+  	&gt; git push -u original master
+</code></pre>
     </div>
+  </li>
+  <li>
+    <p><strong>STEP 9:</strong>
+You are Done!!. Open the browser and go to <strong>http://username.github.io.</strong></p>
+  </li>
+</ul>
 
-    <div class="widget">
-        <h3 class="title">Authors</h3>
-        <ul class="author_list">
-            
-                <li>
-                    <a href="/author/1">
-                        
-                            Ashokkumar
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="/author/person">
-                        
-                            person
-                        
-                    </a>
-                </li>
-            
-        </ul>
-    </div>
+<h4 id="github-for-windowsmac">Github for windows/Mac</h4>
 
-    <a class="button u-facebook" href="https://www.facebook.com/mindstuffsblog" target="_blank">Like Mindstuffs on Facebook <i class="f-larger fa fa-thumbs-up"></i></a>
-</div>
+<ul>
+  <li>
+    <p><strong>STEP 5:</strong>
+Clone the repository. Click on the Setup in Desktop button. When the github desktop app opens, save the project.</p>
 
+    <p><img src="/img/setup-in-desktop.png" alt="setup in desktop" /></p>
+  </li>
+  <li>
+    <p><strong>STEP 6:</strong>
+create a new html file or existing website code. Enter your repository and click commit and sync button.</p>
+
+    <p><img src="/img/commit-sync.png" alt="setup in desktop" /></p>
+  </li>
+  <li>
+    <p><strong>STEP 7:</strong>
+You are Done!!. Open the browser and go to <strong>http://username.github.io.</strong></p>
+  </li>
+</ul>
+
+<hr />
+
+
+                        </div>
+                        
+                        <div class="catsandtags">
+                            
+                            <p class="category">
+                                <span class="name">Categories:</span>
+                                webentrepreneur
+                            </p>
+                            
+                            
+                            <p class="tags">
+                                <span class="name">Tags:</span>
+                                
+                                    <a href="/tag/github">github</a>
+                                
+                                    <a href="/tag/free">free</a>
+                                
+                                    <a href="/tag/hosting">hosting</a>
+                                
+                                    <a href="/tag/website">website</a>
+                                
+                                    <a href="/tag/free hosting">free hosting</a>
+                                
+                            </p>
+                            
+                        </div>
+                        
+
+                        <div class="Sharer_inner">
+                            <a href="javascript:void(0);" rel="nofollow" class="Sharer_link u-button u-facebook"><i class="Sharer_icon fa fa-facebook"></i><span class="Sharer_label">Facebook</span></a>
+                            <a href="javascript:void(0);" rel="nofollow" title="How to host website in github" class="Sharer_link u-button u-linkedin"><i class="Sharer_icon fa fa-linkedin"></i><span class="Sharer_label">LinkedIn</span></a>
+                        </div>
+                    </article>
+                    <div class="post_nav">
+                        
+                        
+                        <a class="next" href="/how-to-update-custom-domain-to-your-github-hosted-site/"><span class="short">next </span><span class="long">post </span><i class="fa fa-angle-right"></i></a>
+                        
+                    </div>
+
+                    <script type="text/javascript">
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//http-mindstuffs-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread"></div>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+     
+                </div>                           
             </div>
         </section>
         <footer>
@@ -493,5 +601,6 @@
 </footer>
 
         <script src="/js/build/global.min.js"></script>
+        <script id="dsq-count-scr" src="//http-mindstuffs-com.disqus.com/count.js" async></script>
     </body>
 </html>
